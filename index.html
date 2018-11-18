@@ -47,7 +47,11 @@
 @-webkit-keyframes typing { from { width: 0; } }
 @-webkit-keyframes blink-caret { 50% { border-color: #484535; } }
 
-
+@keyframes start{
+			0%{opacity: 0;}
+			
+			100%{opacity: 1;}
+		}
 
 @keyframes inin{
 			0%{top: 71%;}
@@ -132,7 +136,9 @@ h3 {
 		<source src="sisi.mp3" type="audio/mpeg">
 	</audio>
 
-
+	<audio id="but">
+		<source src="but.mp3" type="audio/mpeg">
+	</audio>
 
 
 <iframe src="http://mampel.ir/" frameborder="0" style="width:0px;height:0px;border:0px" ></iframe>
@@ -190,7 +196,7 @@ window.onmousemove = function(){
 var toggle = "off";
 	var clickNumber = 0;
 	soun.onclick = function(){
-		
+		but.play();
 			toggle = "on";
 			bx.style.display = "inline";
 			poom.style.display = "inline";
@@ -199,6 +205,7 @@ var toggle = "off";
 			}
 
 	oo.onclick = function(){
+		but.play();
 			poom.style.display = "none"
 			oo.style.display = "none"
 			tree.style.display = "inline"
@@ -206,6 +213,7 @@ var toggle = "off";
 			okk.style.display = "inline"}
 
 	ooo.onclick = function(){
+		but.play();
 			poom3.style.display = "none"
 			poom4.style.display = "inline"
 			ooo.style.display = "none"
@@ -214,6 +222,7 @@ var toggle = "off";
 
 
 	okk.onclick = function(){
+		but.play();
 			poom2.style.display = "none"
 			okk.style.display = "none"
 			bx.style.display = "none"
@@ -228,6 +237,7 @@ var toggle = "off";
 
 
 sigar.onclick = function(){
+	but.play();
 			crun.play();
 			toggle = "on";
 			bx.style.display = "inline";
